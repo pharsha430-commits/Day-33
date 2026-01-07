@@ -1,0 +1,25 @@
+What is functions in SQL? How it differs from Procedures?
+SQL functions are built-in or user-defined operations that perform calculations, manipulate data, and return results within SQL queries. They help simplify complex data handling and enhance the functionality of SQL statements. Functions can be used in various SQL clauses, such as SELECT, WHERE, ORDER BY, and GROUP BY, wherever an expression is allowed. 
+Function -
+- A function is a database object used to return a single value.
+- It must return a value using the RETURN keyword.
+- Functions are mainly used for calculations and validations.
+- Functions can be used inside SELECT statements.
+- Functions do not allow INSERT, UPDATE, DELETE operations.
+- Only IN parameters are allowed in functions.
+Procedure -
+- A procedure is a database object used to perform a set of actions.
+- It may or may not return a value.
+- Procedures are mainly used for business logic.
+- Procedures cannot be used inside SELECT statements.
+- Procedures allow INSERT, UPDATE, DELETE operations.
+- IN, OUT and INOUT parameters are allowed in procedures.
+
+Function                         Procedure
+---------------------------------------------
+Returns a value                  May or may not return a value
+RETURN keyword mandatory         RETURN keyword optional
+Used in SELECT statement         Cannot be used in SELECT
+Only IN parameters               IN, OUT, INOUT parameters
+No DML operations                DML operations allowed
+Used for calculations            Used for business logic
